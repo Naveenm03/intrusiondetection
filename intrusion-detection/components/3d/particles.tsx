@@ -30,7 +30,13 @@ function ParticlesMesh() {
   return (
     <points ref={points}>
       <bufferGeometry>
-        <bufferAttribute attach="attributes-position" count={particlesCount} array={positions} itemSize={3} />
+        <bufferAttribute 
+          attach="attributes-position" 
+          count={particlesCount} 
+          array={positions} 
+          itemSize={3}
+          args={[positions, 3]} 
+        />
       </bufferGeometry>
       <pointsMaterial size={0.03} color="#34c759" sizeAttenuation transparent opacity={0.8} />
     </points>
