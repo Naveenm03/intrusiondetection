@@ -11,6 +11,7 @@ import { motion } from "framer-motion"
 import { Shield, AlertTriangle, Zap, Wifi, MapPin } from 'lucide-react'
 import { Skeleton } from "@/components/ui/skeleton"
 import { Bar } from "react-chartjs-2"
+import { Particles } from "@/components/3d/particles"
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -280,7 +281,10 @@ export default function HeatmapPage() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container relative mx-auto px-4 py-8">
+        <div className="absolute inset-0 -z-10">
+          <Particles />
+        </div>
         <motion.div 
           initial={{ opacity: 0, y: 20 }} 
           animate={{ opacity: 1, y: 0 }} 
