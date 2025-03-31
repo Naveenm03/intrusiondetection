@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Mugil S", 
     description: "4th Year CSE-B",
     role: "Developer",
-    image: "/team-member-2.jpg"
+    image: "/mugil.jpg"
   },
   {
     name: "Naveen M",
